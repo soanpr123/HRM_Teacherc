@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageview_detail"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textviewhoten_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/imageview_detail"
+        android:text="Họ tên:"
+        android:textColor="#f000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewkhoa_detail"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Khoa:"
+        android:textColor="#f000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewbomon_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="Bộ môn:"
+        android:textColor="#f000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewgioitinh_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="90dp"
+        android:text="Giới tính:"
+        android:textColor="#f000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewngaysinh_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="130dp"
+        android:text="Ngày sinh:"
+        android:textColor="#f000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textviewdiachi_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="170dp"
+        android:text="Địa chỉ:"
+        android:textColor="#f000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/textviewhocvi_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageview_detail"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="210dp"
+        android:text="Học vị:"
+        android:textColor="#f000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "124139890234",
+    "firebase_url": "https://teacherhrm-1b66b.firebaseio.com",
+    "project_id": "teacherhrm-1b66b",
+    "storage_bucket": "teacherhrm-1b66b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:124139890234:android:11c31ecaa91884f5a5f703",
+        "android_client_info": {
+          "package_name": "com.tbt.bachtung.hrm_teacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "124139890234-uvn5a2ds77ba98dd7lcjr8vcibb0qoge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEQcOgilbIf0ooBSliQzkLRp3xYTJo_Gc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "124139890234-uvn5a2ds77ba98dd7lcjr8vcibb0qoge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Update_Teacher">
+
+    <ImageView
+        android:src="@drawable/no_image"
+        android:id="@+id/imglibrary_update"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/btnchonanh_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chọn ảnh"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        app:layout_constraintStart_toEndOf="@+id/imglibrary_update"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnchupanh_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chụp ảnh"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toEndOf="@+id/imglibrary_update"
+        app:layout_constraintTop_toBottomOf="@+id/btnchonanh_update" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="30"
+        app:hintEnabled="true"
+        android:textColorHint="#F40808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imglibrary_update"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edthoten_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Họ và tên giảng viên"
+            android:textColor="#f000"
+            android:textSize="18dp"
+            android:maxLength="30"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout1_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="30"
+        app:hintEnabled="true"
+        android:textColorHint="#F40808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        tools:ignore="MissingConstraints">
+        <AutoCompleteTextView
+            android:id="@+id/edtgioitinh_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Giới tính"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="30"
+        app:hintEnabled="true"
+        android:textColorHint="#F40808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout1_update"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtngaysinh_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ngày sinh"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="30"
+        app:hintEnabled="true"
+        android:textColorHint="#F40808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2_update"
+        tools:ignore="MissingConstraints">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtdiachi_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Địa chỉ"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout4_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="30"
+        app:hintEnabled="true"
+        android:textColorHint="#F40808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout3_update"
+        tools:ignore="MissingConstraints">
+        <AutoCompleteTextView
+            android:id="@+id/edthocvi_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Học vị"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout5_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="30"
+        app:hintEnabled="true"
+        android:textColorHint="#F40808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout4_update"
+        tools:ignore="MissingConstraints">
+        <AutoCompleteTextView
+            android:id="@+id/edtkhoa_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Khoa"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="30"
+        app:hintEnabled="true"
+        android:textColorHint="#F40808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5_update"
+        tools:ignore="MissingConstraints">
+        <AutoCompleteTextView
+            android:id="@+id/edttbomon_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Bộ môn"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:counterMaxLength="30"
+        app:hintEnabled="true"
+        android:textColorHint="#F40808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6_update"
+        tools:ignore="MissingConstraints">
+        <AutoCompleteTextView
+            android:id="@+id/edtmagv_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mã Giảng Viên"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnactionadd_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cập nhật"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7_update" />
+
+    <Button
+        android:id="@+id/actioncancle_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hủy"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7_update" />
+
+    <Button
+        android:id="@+id/actiondelete_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Xóa Giảng Viên"
+        android:textColor="#FD0202"
+        android:textSize="15dp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toStartOf="@+id/actioncancle_update"
+        app:layout_constraintHorizontal_bias="0.079"
+        app:layout_constraintStart_toEndOf="@+id/btnactionadd_update"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7_update" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
